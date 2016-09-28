@@ -118,3 +118,9 @@ h1 {
     font-size: 2em;
     color: red;
 }
+
+.btnMenu {
+    width: 150px;
+    border-radius: 5px;
+    padding: 3px 0;
+}
