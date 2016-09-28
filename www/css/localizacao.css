@@ -47,10 +47,11 @@ body {
 
 /* Portrait layout (default) */
 .app {
-    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
+    background:url(../img/_logo.png) no-repeat center top; /* 170px x 200px */
+    background:url(../img/_geoIcon3.png) no-repeat center top; /* 170px x 200px */
     position:absolute;             /* position in the center of the screen */
     left:50%;
-    top:50%;
+/*    top:50%;*/
     height:50px;                   /* text area height */
     width:225px;                   /* text area width */
     text-align:center;
@@ -72,10 +73,11 @@ body {
 h1 {
     font-size:24px;
     font-weight:normal;
-    margin:0px;
+/*    margin:0px;*/
     overflow:visible;
     padding:0px;
     text-align:center;
+    margin-bottom: 10%;
 }
 
 .event {
@@ -112,4 +114,16 @@ h1 {
 .blink {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
+}
+
+img {
+    margin-bottom: 15%;
+}
+
+.btnMenu {
+    width: 100%;
+    border-radius: 5px;
+    padding: 4px 0;
+    font-size: 1.7em;
+    margin: 3% 0;
 }

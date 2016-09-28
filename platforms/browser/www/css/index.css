@@ -47,16 +47,25 @@ body {
 
 /* Portrait layout (default) */
 .app {
-    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
+    background:url(../img/_logo.png) no-repeat center top; /* 170px x 200px */
+    background:url(../img/_menu.png) no-repeat center top; /* 170px x 200px */
     position:absolute;             /* position in the center of the screen */
     left:50%;
-    top:50%;
+/*    top:20%;*/
     height:50px;                   /* text area height */
     width:225px;                   /* text area width */
     text-align:center;
-    padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
-    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
+    padding:180px 0px 0px 0px;      /*image height is 200px (bottom 20px are overlapped with text) */
+    margin:-115px 0px 0px -112px;   /*offset vertical: half of image height and text area height */
                                    /* offset horizontal: half of text area width */
+}
+
+.btnMenu {
+    width: 100%;
+    border-radius: 5px;
+    padding: 4px 0;
+    font-size: 2em;
+    margin: 3% 0;
 }
 
 /* Landscape layout (with min-width) */
@@ -67,15 +76,17 @@ body {
         margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
                                       /* offset horizontal: half of image width and text area width */
     }
+    
 }
 
 h1 {
     font-size:24px;
     font-weight:normal;
-    margin:0px;
+/*    margin:0px;*/
     overflow:visible;
     padding:0px;
     text-align:center;
+    margin: 5% 0;
 }
 
 .event {
@@ -119,8 +130,6 @@ h1 {
     color: red;
 }
 
-.btnMenu {
-    width: 150px;
-    border-radius: 5px;
-    padding: 3px 0;
+img {
+    margin-bottom: 15%;
 }
