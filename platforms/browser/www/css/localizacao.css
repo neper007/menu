@@ -113,8 +113,3 @@ h1 {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
 }
-
-#msg1 {
-    font-size: 2em;
-    color: red;
-}

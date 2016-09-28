@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+
+    <link rel="stylesheet" type="text/css" href="css/calculoIMC.css" />
+    <title>Calculo IMC</title>
+</head>
+
+<body>
+   
+    <div class="app">
+<!--        <h1>Calculo IMC</h1>-->
+        <div id="form">
+            <h2>Cálculo do índice de massa corporal (IMC)</h2>
+
+            <form name="calculoIMC" action="">
+              <input type="text" id="nome" placeholder="Insira o seu nome">
+              <br><br>
+              <input type="text" id="peso" placeholder="O seu peso (kg)">
+              <br><br>
+              <input type="text" id="altura" placeholder="A sua altura em cm (ex. 170)">
+              <br><br>
+            </form>
+
+            <button id="btnCalc" onclick="calcIMC()">Cálculo IMC</button>
+            <br><br>
+            <span id="outMsg"></span><br>
+            <span id="outTabIMC"></span>
+            
+        </div>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/calculoIMC.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+
+</html>
